@@ -1012,7 +1012,7 @@ https://gab-platform.com
 | Fichier | Modifications |
 |---------|---------------|
 | `app/(public)/events/page.tsx` | Ajouter bouton CTA "Proposer un talk" |
-| `lib/supabase/types.ts` | Ajouter type `TalkSubmission` |
+| `lib/types/content.ts` | Ajouter type `TalkSubmission` |
 
 ### Composants shadcn/ui à Utiliser
 

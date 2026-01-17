@@ -953,7 +953,7 @@ WHERE published = true;
 
 ### V5 : Personnalisation
 
-- Authentification utilisateur (Supabase Auth)
+- Authentification utilisateur
 - Système de favoris / événements sauvegardés
 - Notifications email avant un événement
 - Recommandations personnalisées selon le parcours
@@ -968,7 +968,6 @@ WHERE published = true;
 | ------------------------------------------ | ----------------------------------------- |
 | `components/events/event-filters.tsx`      | Panneau de filtres (ville, type, période) |
 | `components/events/video-player-modal.tsx` | Modal avec player YouTube                 |
-| `scripts/migrate-events-to-supabase.ts`    | Script migration JSON → Supabase          |
 | `hooks/use-event-filters.ts`               | Hook custom pour gérer l'état des filtres |
 | `lib/utils/filter-events.ts`               | Fonctions utilitaires de filtrage         |
 
@@ -976,10 +975,9 @@ WHERE published = true;
 
 | Fichier                            | Modifications                                |
 | ---------------------------------- | -------------------------------------------- |
-| `app/(public)/events/page.tsx`     | Intégrer filtres, pagination, fetch Supabase |
+| `app/(public)/events/page.tsx`     | Intégrer filtres, pagination, fetch données  |
 | `components/events/event-card.tsx` | Ajouter badge ville, améliorer UI            |
 | `data/events.json`                 | Ajouter champ `city` et enrichir données     |
-| `lib/supabase/types.ts`            | Ajouter type `city` dans Event               |
 
 ### Nouveaux Composants shadcn/ui à Utiliser
 
@@ -1004,7 +1002,6 @@ WHERE published = true;
 
 ### Avant Phase 2
 
-- [ ] Vérifier l'accès Supabase en production
 - [ ] Configurer les variables d'environnement Vercel
 - [ ] Créer un environnement de staging pour tests
 - [ ] Préparer le script de migration et le tester

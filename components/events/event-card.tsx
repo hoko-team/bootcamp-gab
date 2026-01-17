@@ -5,7 +5,7 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { formatEventDate } from "@/lib/utils";
-import type { Event } from "@/lib/supabase/types";
+import type { Event } from "@/lib/types/content";
 
 interface EventCardProps {
   event: Event;

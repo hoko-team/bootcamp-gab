@@ -42,7 +42,6 @@ Exemples :
 ## Stack technique
 
 - **Framework** : Next.js 15 (App Router, React 19)
-- **Database** : Supabase (PostgreSQL)
 - **Hosting** : Vercel
 - **Styling** : Tailwind CSS
 - **UI** : shadcn/ui (composants dans `components/ui/`)
@@ -72,7 +71,6 @@ components/
 └── forms/                # NewsletterForm
 
 lib/
-├── supabase/             # Client, server, types générés
 ├── validations/          # Schémas Zod
 └── utils.ts              # Helpers (cn, formatDate)
 ```
@@ -87,23 +85,9 @@ lib/
 - **Imports UI** : Toujours depuis `@/components/ui/`
 - **Styles** : Tailwind uniquement, utiliser `cn()` pour les classes conditionnelles
 
-## Base de données Supabase
-
-Tables principales :
-
-- `articles` : slug, title, content, category, tags, published
-- `resources` : type, parcours, difficulty
-- `formations` : modules (JSONB)
-- `events` : event_date, registration_url, replay_url, is_past, event_type
-- `subscribers` : email, parcours
-- `partners` : name, logo, website
-
 ## Variables d'environnement requises
 
 ```
-NEXT_PUBLIC_SUPABASE_URL=
-NEXT_PUBLIC_SUPABASE_ANON_KEY=
-SUPABASE_SERVICE_ROLE_KEY=
 RESEND_API_KEY=
 ```
 

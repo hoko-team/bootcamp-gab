@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { formatDate } from "@/lib/utils";
-import type { Article } from "@/lib/supabase/types";
+import type { Article } from "@/lib/types/content";
 
 interface ArticleCardProps {
   article: Article;

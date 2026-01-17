@@ -2,7 +2,7 @@ import Link from "next/link";
 import { FileText, Code, Layout, MessageSquare } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import type { Resource } from "@/lib/supabase/types";
+import type { Resource } from "@/lib/types/content";
 
 const typeIcons = {
   guide: FileText,
