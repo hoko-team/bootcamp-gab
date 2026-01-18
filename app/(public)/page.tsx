@@ -37,6 +37,7 @@ export default function HomePage() {
           title: "GAB Meetup #4",
           date: "29/01/2026",
           registrationUrl: "/events",
+          location: "Lille, Hauts-de-France",
         }}
       />
 
