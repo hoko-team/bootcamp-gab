@@ -1,6 +1,5 @@
 import { Calendar, Play, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 interface EmptyStateProps {
   icon: React.ReactNode;
@@ -22,27 +21,36 @@ function EmptyState({ icon, title, description, action }: EmptyStateProps) {
   );
 }
 
-export function NoUpcomingEvents() {
+interface EmptyStateWithResetProps {
+  onReset: () => void;
+}
+
+export function NoUpcomingEvents({ onReset }: EmptyStateWithResetProps) {
   return (
     <EmptyState
       icon={<Calendar className="h-12 w-12" />}
-      title="Aucun événement prévu pour le moment"
-      description="Inscrivez-vous à la newsletter pour être notifié des prochains événements de la communauté GAB."
+      title="Aucun événement"
+      description="Aucun événement à venir ne correspond à vos critères."
       action={
-        <Button asChild>
-          <Link href="/#newsletter">Recevoir les annonces</Link>
+        <Button onClick={onReset} variant="outline">
+          Réinitialiser les filtres
         </Button>
       }
     />
   );
 }
 
-export function NoReplays() {
+export function NoPastEvents({ onReset }: EmptyStateWithResetProps) {
   return (
     <EmptyState
       icon={<Play className="h-12 w-12" />}
-      title="Aucun replay disponible actuellement"
-      description="Les replays des événements passés seront publiés ici prochainement. Revenez bientôt pour découvrir nos précédentes sessions."
+      title="Aucun événement"
+      description="Aucun événement passé ne correspond à vos critères."
+      action={
+        <Button onClick={onReset} variant="outline">
+          Réinitialiser les filtres
+        </Button>
+      }
     />
   );
 }

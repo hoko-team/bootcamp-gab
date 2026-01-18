@@ -29,7 +29,7 @@ const EVENT_TYPES: Array<{ value: EventType | "all"; label: string }> = [
 const PERIOD_OPTIONS: Array<{ value: PeriodFilter; label: string }> = [
   { value: "all", label: "Tous les événements" },
   { value: "upcoming", label: "À venir uniquement" },
-  { value: "replays", label: "Replays disponibles" },
+  { value: "past", label: "Événements passés" },
 ];
 
 interface EventFiltersProps {

@@ -7,7 +7,7 @@ export type Event = Database["public"]["Tables"]["events"]["Row"] & {
 };
 
 export type EventType = "meetup" | "webinar" | "workshop" | "conference";
-export type PeriodFilter = "all" | "upcoming" | "replays";
+export type PeriodFilter = "all" | "upcoming" | "past";
 export type CityFilter = "Lille" | "Paris" | "Lyon" | "Remote";
 
 export interface FilterParams {
@@ -22,8 +22,13 @@ export interface FilterCounts {
   byPeriod: {
     all: number;
     upcoming: number;
-    replays: number;
+    past: number;
   };
+}
+
+function isPastEvent(event: Event): boolean {
+  if (event.is_past !== null) return event.is_past;
+  return new Date(event.event_date) < new Date();
 }
 
 /**
@@ -52,15 +57,11 @@ export function filterByPeriod(
   events: Event[],
   period: PeriodFilter
 ): Event[] {
-  const now = new Date();
-
   switch (period) {
     case "upcoming":
-      return events.filter((e) => new Date(e.event_date) >= now);
-    case "replays":
-      return events.filter(
-        (e) => new Date(e.event_date) < now && e.replay_url !== null
-      );
+      return events.filter((event) => !isPastEvent(event));
+    case "past":
+      return events.filter((event) => isPastEvent(event));
     default:
       return events;
   }
@@ -84,17 +85,15 @@ export function applyFilters(
  * Sort events: upcoming ascending, past descending
  */
 export function sortEvents(events: Event[]): Event[] {
-  const now = new Date();
-
   const upcoming = events
-    .filter((e) => new Date(e.event_date) >= now)
+    .filter((event) => !isPastEvent(event))
     .sort(
       (a, b) =>
         new Date(a.event_date).getTime() - new Date(b.event_date).getTime()
     );
 
   const past = events
-    .filter((e) => new Date(e.event_date) < now)
+    .filter((event) => isPastEvent(event))
     .sort(
       (a, b) =>
         new Date(b.event_date).getTime() - new Date(a.event_date).getTime()
@@ -107,8 +106,6 @@ export function sortEvents(events: Event[]): Event[] {
  * Calculate dynamic counters for filter UI
  */
 export function calculateFilterCounts(events: Event[]): FilterCounts {
-  const now = new Date();
-
   return {
     byCity: events.reduce((acc, event) => {
       const city = event.city || "Unknown";
@@ -123,27 +120,21 @@ export function calculateFilterCounts(events: Event[]): FilterCounts {
 
     byPeriod: {
       all: events.length,
-      upcoming: events.filter((e) => new Date(e.event_date) >= now).length,
-      replays: events.filter(
-        (e) => new Date(e.event_date) < now && e.replay_url !== null
-      ).length,
+      upcoming: events.filter((event) => !isPastEvent(event)).length,
+      past: events.filter((event) => isPastEvent(event)).length,
     },
   };
 }
 
 /**
- * Separate events into upcoming and replays
+ * Separate events into upcoming and past
  */
 export function separateEvents(events: Event[]): {
   upcoming: Event[];
-  replays: Event[];
+  past: Event[];
 } {
-  const now = new Date();
+  const upcoming = events.filter((event) => !isPastEvent(event));
+  const past = events.filter((event) => isPastEvent(event));
 
-  const upcoming = events.filter((e) => new Date(e.event_date) >= now);
-  const replays = events.filter(
-    (e) => new Date(e.event_date) < now && e.replay_url !== null
-  );
-
-  return { upcoming, replays };
+  return { upcoming, past };
 }

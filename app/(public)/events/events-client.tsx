@@ -7,7 +7,7 @@ import { EventCard } from "@/components/events/event-card";
 import { VideoPlayerModal } from "@/components/events/video-player-modal";
 import {
   NoUpcomingEvents,
-  NoReplays,
+  NoPastEvents,
   NoFilterResults,
 } from "@/components/events/empty-states";
 import { useEventFilters } from "@/hooks/use-event-filters";
@@ -35,7 +35,7 @@ export function EventsClient({ initialEvents }: EventsClientProps) {
   // Apply filters and sorting
   const filteredEvents = applyFilters(initialEvents, filters);
   const sortedEvents = sortEvents(filteredEvents);
-  const { upcoming, replays } = separateEvents(sortedEvents);
+  const { upcoming, past } = separateEvents(sortedEvents);
 
   // Determine if we should show "no results" empty state
   const showNoResults =
@@ -66,7 +66,7 @@ export function EventsClient({ initialEvents }: EventsClientProps) {
               {/* Upcoming Events Section */}
               <section className="mb-12">
                 <h2 className="text-2xl font-bold mb-6">
-                  Prochains événements ({upcoming.length})
+                  Événements à venir ({upcoming.length})
                 </h2>
                 {upcoming.length > 0 ? (
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -75,18 +75,18 @@ export function EventsClient({ initialEvents }: EventsClientProps) {
                     ))}
                   </div>
                 ) : (
-                  <NoUpcomingEvents />
+                  <NoUpcomingEvents onReset={resetFilters} />
                 )}
               </section>
 
-              {/* Replays Section */}
+              {/* Past Events Section */}
               <section>
                 <h2 className="text-2xl font-bold mb-6">
-                  Replays disponibles ({replays.length})
+                  Événements passés ({past.length})
                 </h2>
-                {replays.length > 0 ? (
+                {past.length > 0 ? (
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {replays.map((event) => (
+                    {past.map((event) => (
                       <EventCard
                         key={event.id}
                         event={event}
@@ -95,7 +95,7 @@ export function EventsClient({ initialEvents }: EventsClientProps) {
                     ))}
                   </div>
                 ) : (
-                  <NoReplays />
+                  <NoPastEvents onReset={resetFilters} />
                 )}
               </section>
             </>

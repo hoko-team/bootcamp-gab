@@ -2,7 +2,18 @@
 
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import { useMemo, useCallback } from "react";
-import type { FilterParams, EventType, PeriodFilter } from "@/lib/utils/filter-events";
+import type {
+  FilterParams,
+  EventType,
+  PeriodFilter,
+} from "@/lib/utils/filter-events";
+
+function getPeriodFilter(value: string | null): PeriodFilter {
+  if (value === "replays") return "past";
+  if (value === "upcoming") return "upcoming";
+  if (value === "past") return "past";
+  return "all";
+}
 
 /**
  * Custom hook for managing event filter state with URL synchronization
@@ -30,7 +41,7 @@ export function useEventFilters() {
     return {
       cities: citiesParam ? citiesParam.split(",").filter(Boolean) : [],
       type: (typeParam as EventType | "all") || "all",
-      period: (periodParam as PeriodFilter) || "all",
+      period: getPeriodFilter(periodParam),
     };
   }, [searchParams]);
 
