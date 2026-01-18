@@ -1,8 +1,8 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import { EventsClient } from "./events-client";
-import eventsData from "@/data/events.json";
 import type { Event } from "@/lib/utils/filter-events";
+import { createClient } from "@/lib/supabase/server";
 
 export const metadata: Metadata = {
   title: "Événements | GAB Platform",
@@ -10,13 +10,28 @@ export const metadata: Metadata = {
     "Découvrez nos meetups, webinars et workshops sur l'IA générative dans toute la France et en ligne.",
 };
 
-export default function EventsPage() {
-  // Load events from JSON
-  // Note: JSON events don't have created_at/updated_at from Supabase
-  const allEvents = eventsData as unknown as Event[];
+async function fetchPublishedEvents(): Promise<Event[]> {
+  const supabase = await createClient();
+  const { data, error } = await supabase
+    .from("events")
+    .select("*")
+    .eq("published", true);
 
-  // Filter only published events
-  const publishedEvents = allEvents.filter((e) => e.published);
+  if (error) {
+    console.error("Failed to fetch events", error);
+    return [];
+  }
+
+  const events = (data ?? []) as Event[];
+
+  return events.map((event) => ({
+    ...event,
+    city: inferCityFromLocation(event.location),
+  }));
+}
+
+export default async function EventsPage() {
+  const publishedEvents = await fetchPublishedEvents();
 
   return (
     <div className="container mx-auto px-4 py-12">
@@ -35,4 +50,18 @@ export default function EventsPage() {
       </Suspense>
     </div>
   );
+}
+
+function inferCityFromLocation(location: string | null): string | null {
+  if (!location) return null;
+  const normalizedLocation = location.toLowerCase();
+
+  if (normalizedLocation.includes("en ligne")) return "Remote";
+  if (normalizedLocation.includes("remote")) return "Remote";
+  if (normalizedLocation.includes("online")) return "Remote";
+  if (normalizedLocation.includes("lille")) return "Lille";
+  if (normalizedLocation.includes("paris")) return "Paris";
+  if (normalizedLocation.includes("lyon")) return "Lyon";
+
+  return null;
 }
