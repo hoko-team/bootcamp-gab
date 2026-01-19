@@ -36,6 +36,7 @@ export default function HomePage() {
         nextEvent={{
           title: "GAB Meetup #4",
           date: "29/01/2026",
+          location: "Lille",
           registrationUrl: "/events",
         }}
       />
