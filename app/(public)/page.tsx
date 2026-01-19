@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { NewsletterForm } from "@/components/forms/newsletter-form";
 import { Hero } from "@/components/hero/hero";
+import { getNextEvent, formatEventForHero } from "@/lib/events";
 
 const features = [
   {
@@ -29,16 +30,13 @@ const features = [
 ];
 
 export default function HomePage() {
+  const nextEvent = getNextEvent();
+  const heroEvent = formatEventForHero(nextEvent);
+
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <Hero
-        nextEvent={{
-          title: "GAB Meetup #4",
-          date: "29/01/2026",
-          registrationUrl: "/events",
-        }}
-      />
+      <Hero nextEvent={heroEvent} />
 
       {/* Features Section */}
       <section className="container mx-auto px-4 py-16">
