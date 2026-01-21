@@ -3,64 +3,456 @@
     "id": "event-1",
     "slug": "lille-ai-code-meetup-1",
     "title": "Lille AI Code Meetup",
-    "description": "Rejoins la communauté tech lilloise pour le premier meetup français dédié à la pointe de la **Programmation Assistée par IA** : du Vibe Coding aux agents de codage IA comme Windsurf, Cursor ou Cline qui transforment la façon de créer des logiciels.\n\n## C'est quoi ce meetup ?\n\nOn se retrouve pour échanger, partager des astuces et explorer ensemble comment l'IA transforme notre façon de coder. Que tu sois dev confirmé ou simple curieux, viens découvrir comment créer des applis en discutant simplement avec une IA.\n\n## Au menu :\n\n* Des démos bluffantes de code généré par IA\n* Des retours d'expérience de ceux qui l'utilisent déjà\n* Des échanges informels sur les possibilités et limites\n* Un espace pour tester et expérimenter\n\n## Tu es concerné si :\n\n* Tu codes et tu veux gagner en productivité\n* Tu as des idées mais pas les compétences techniques\n* Tu es curieux des nouvelles façons de créer du logiciel\n* Tu veux rencontrer d'autres passionnés de tech\n\n## Pourquoi venir ?\n\n* Pour voir en direct ce qu'on peut faire avec ces outils\n* Pour éviter les galères en apprenant des autres\n* Pour élargir ton réseau local de tech enthusiasts\n* Pour passer un bon moment autour d'une passion commune\n\n**Ramène ta bonne humeur, tes questions et tes idées ! On se retrouve pour viber ensemble et repousser les limites de la création logicielle !**\n\n_PS: Débutants bienvenus - pas besoin d'être un expert pour participer !_",
+    "description": "Rejoins la communauté tech lilloise pour le premier meetup français dédié à la pointe de la **Programmation Assistée par IA** : du Vibe Coding aux agents de codage IA comme Windsurf, Cursor ou Cline qui transforment la façon de créer des logiciels.",
+    "short_description": "Premier meetup français dédié à la Programmation Assistée par IA.",
     "event_date": "2024-01-01T19:00:00Z",
-    "event_end_date": null,
+    "event_end_date": "2024-01-01T22:00:00Z",
     "location": "Lille, Hauts-de-France",
-    "image_url": null,
-    "registration_url": "https://luma.com/nssmjiml",
+    "address": "Place du Général de Gaulle, 59000 Lille, France",
+    "coordinates": [50.6365, 3.0635],
+    "image_url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
+    "registration_url": "https://lu.ma/nssmjiml",
     "replay_url": null,
     "is_past": true,
     "event_type": "meetup",
     "capacity": 68,
-    "published": true
+    "registered_count": 68,
+    "published": true,
+    "speakers": [],
+    "tags": ["#IA", "#Programmation", "#Vibe Coding", "#Community"],
+    "registered_users": ["user-1", "user-2", "user-3", "user-4", "user-5"],
+    "agenda": [
+      {
+        "time": "19:00",
+        "title": "Accueil et networking",
+        "description": "Café et rencontres informelles",
+        "duration_minutes": 30
+      },
+      {
+        "time": "19:30",
+        "title": "Introduction au Vibe Coding",
+        "description": "Présentation des outils et concepts",
+        "duration_minutes": 45
+      },
+      {
+        "time": "20:15",
+        "title": "Démos live",
+        "description": "Démonstrations de code généré par IA",
+        "duration_minutes": 45
+      },
+      {
+        "time": "21:00",
+        "title": "Networking et drinks",
+        "description": "Échanges libres autour d'un verre",
+        "duration_minutes": 60
+      }
+    ],
+    "resources": [],
+    "gallery_urls": [],
+    "calendar": {
+      "google_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Lille+AI+Code+Meetup&dates=20240101T190000Z/20240101T220000Z&location=Lille&details=Premier+meetup+fran%C3%A7ais+d%C3%A9di%C3%A9+%C3%A0+la+Programmation+Assist%C3%A9e+par+IA",
+      "ical_data": "BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\nDTSTART:20240101T190000Z\nDTEND:20240101T220000Z\nSUMMARY:Lille AI Code Meetup\nLOCATION:Lille, Hauts-de-France\nDESCRIPTION:Premier meetup français dédié à la Programmation Assistée par IA\nEND:VEVENT\nEND:VCALENDAR"
+    }
   },
   {
     "id": "event-2",
     "slug": "lille-ai-code-meetup-2",
     "title": "Lille AI Code Meetup #2",
-    "description": "Rejoins la communauté tech lilloise pour la deuxième édition du meetup dédié à la **programmation assistée par IA** : du Vibe Coding aux agents de codage IA comme Windsurf, Cursor ou Claude Code qui transforment la façon de créer des produits digitaux.\n\n## C'est quoi ce meetup ?\n\nOn se retrouve pour échanger, partager des astuces et explorer ensemble comment l'IA transforme notre façon de coder. Que tu sois dev confirmé ou simple curieux, viens découvrir comment créer des applis bosstées par de l'IA.\n\n## Au menu :\n\n* Un retour d'expérience de Stéphane Dessein, CTO et Quentin Janon, développeur web chez **Le Fourgon** sur la refonte de leur site web marchand. Ils nous font le plaisir de nous recevoir pour cette seconde édition.\n\n_Mais aussi..._\n\n* Des démos de produits créés avec de l'IA\n* Les dernières actus et astuces du moment\n* Des échanges informels sur les possibilités et limites\n\n## Tu es concerné si :\n\n* Tu codes et tu veux gagner en productivité\n* Tu as des idées mais pas les compétences techniques\n* Tu es curieux des nouvelles façons de créer du logiciel\n* Tu veux rencontrer d'autres passionnés de tech\n\n## Pourquoi venir ?\n\n* Pour découvrir ce qu'on peut faire avec ces outils\n* Pour apprendre des autres membres de la communauté\n* Pour élargir ton réseau local de tech enthusiasts\n* Pour passer un bon moment autour d'une passion commune\n\n**Ramène ta bonne humeur, tes questions et tes idées ! On se retrouve pour viber ensemble et repousser les limites !**\n\n_PS: Débutants bienvenus - pas besoin d'être un expert pour participer !_",
+    "description": "Rejoins la communauté tech lilloise pour la deuxième édition du meetup dédié à la **programmation assistée par IA**. Retour d'expérience exclusif de l'équipe du Fourgon sur la refonte de leur site marchand.",
+    "short_description": "REX Le Fourgon : refonte e-commerce avec l'IA.",
     "event_date": "2024-02-01T19:00:00Z",
-    "event_end_date": null,
-    "location": "Le Fourgon, 270 Av. de l'Espace Bâtiment C, 59118 Wambrechies, France",
-    "image_url": null,
-    "registration_url": "https://luma.com/pmlqn16v",
+    "event_end_date": "2024-02-01T22:00:00Z",
+    "location": "Wambrechies, Hauts-de-France",
+    "address": "Le Fourgon, 270 Av. de l'Espace Bâtiment C, 59118 Wambrechies, France",
+    "coordinates": [50.6833, 3.0489],
+    "image_url": "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&q=80",
+    "registration_url": "https://lu.ma/pmlqn16v",
     "replay_url": null,
     "is_past": true,
     "event_type": "meetup",
     "capacity": 49,
-    "published": true
+    "registered_count": 49,
+    "published": true,
+    "speakers": ["user-4", "user-5"],
+    "tags": ["#IA", "#E-commerce", "#REX", "#Web"],
+    "registered_users": ["user-1", "user-2", "user-3", "user-6", "user-8"],
+    "agenda": [
+      {
+        "time": "19:00",
+        "title": "Accueil chez Le Fourgon",
+        "description": "Visite des locaux et networking",
+        "duration_minutes": 30
+      },
+      {
+        "time": "19:30",
+        "title": "REX Le Fourgon",
+        "description": "Stéphane Dessein et Julien Robidet présentent la refonte de leur site e-commerce",
+        "duration_minutes": 60,
+        "speaker_ids": ["user-4", "user-5"]
+      },
+      {
+        "time": "20:30",
+        "title": "Démos et actus",
+        "description": "Les dernières nouveautés du monde de l'IA",
+        "duration_minutes": 30
+      },
+      {
+        "time": "21:00",
+        "title": "Networking",
+        "description": "Échanges informels",
+        "duration_minutes": 60
+      }
+    ],
+    "resources": [
+      {
+        "title": "Slides Le Fourgon",
+        "url": "/resources/slides-fourgon.pdf",
+        "type": "slides"
+      }
+    ],
+    "gallery_urls": [
+      "/images/events/meetup-2/photo-1.webp",
+      "/images/events/meetup-2/photo-2.webp"
+    ],
+    "calendar": {
+      "google_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Lille+AI+Code+Meetup+%232&dates=20240201T190000Z/20240201T220000Z&location=Le+Fourgon+Wambrechies&details=REX+Le+Fourgon",
+      "ical_data": "BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\nDTSTART:20240201T190000Z\nDTEND:20240201T220000Z\nSUMMARY:Lille AI Code Meetup #2\nLOCATION:Le Fourgon, Wambrechies\nDESCRIPTION:REX Le Fourgon : refonte e-commerce avec l'IA\nEND:VEVENT\nEND:VCALENDAR"
+    }
   },
   {
     "id": "event-3",
     "slug": "lille-ai-code-meetup-3",
-    "title": "Lille AI Code Meetup #3 – Nouveau format ouvert à tous !",
-    "description": "Rejoins la communauté lilloise pour cette **3ᵉ édition** placée sous le signe de l'exploration et du partage entre profils **Tech** et **non-Tech**\n\n👉 Que tu sois **développeur**, **marketeur**, **entrepreneur**, ou simplement **curieux**, viens découvrir comment l'IA transforme la façon de **concevoir des logiciels et des contenus**.\n\n**👨‍💻 Au programme (work in progress) :**\n\n* **Pierre-Yves Banaszak et Julien Robidet** du collectif **Hoko** présenteront les dernières nouveautés en matière de développement assisté par IA, ainsi qu'un retour d'expérience terrain.\n* **Antoine Crespin** partagera son point de vue de **non-tech** avec un retour d'expérience sur le **Vibe Coding**\n* **Quentin Tousart** montrera comment **utiliser Claude Code efficacement sans avoir d'expérience en développement**\n* **François Xavier Cao** détaillera la mise en place **d'un** RAG sur mesure pour le traitement de données confidentielles : défis, bonnes pratiques et alternatives\n\n**🍻 Et comme toujours…**\n\nOn prolonge la soirée autour d'un verre et de quelques snacks offerts par notre sponsor **Proppl** pour **networker, échanger des idées et débattre ensemble des pratiques de demain**.\n\n👉 **Inscris-toi dès maintenant** pour ne pas manquer cette soirée conviviale et inspirante !\n\n---\n\n**EDITION SPONSOR**\n\n🤝 **Proppl**, LA solution de recrutement par recommandation est sponsor de cette édition !",
+    "title": "Lille AI Code Meetup #3",
+    "description": "Troisième édition placée sous le signe de l'exploration et du partage entre profils **Tech** et **non-Tech**. Nouveau format ouvert à tous !",
+    "short_description": "Format ouvert Tech & non-Tech avec 4 speakers.",
     "event_date": "2024-03-01T19:00:00Z",
-    "event_end_date": null,
-    "location": "SKEMA Business School - Campus Lille, Av. Willy Brandt, 59777 Lille, France",
-    "image_url": null,
-    "registration_url": "https://luma.com/wt1i17z6",
-    "replay_url": null,
+    "event_end_date": "2024-03-01T22:00:00Z",
+    "location": "Lille, Hauts-de-France",
+    "address": "SKEMA Business School, Av. Willy Brandt, 59777 Lille, France",
+    "coordinates": [50.6572, 3.1319],
+    "image_url": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80",
+    "registration_url": "https://lu.ma/wt1i17z6",
+    "replay_url": "https://youtube.com/watch?v=example3",
     "is_past": true,
     "event_type": "meetup",
     "capacity": 81,
-    "published": true
+    "registered_count": 75,
+    "published": true,
+    "speakers": ["user-6", "user-8", "user-9", "user-10"],
+    "tags": ["#IA", "#Tech", "#Non-Tech", "#Builders", "#RAG"],
+    "registered_users": ["user-1", "user-2", "user-3", "user-4", "user-6", "user-7"],
+    "agenda": [
+      {
+        "time": "19:00",
+        "title": "Accueil SKEMA",
+        "description": "Networking et café",
+        "duration_minutes": 30
+      },
+      {
+        "time": "19:30",
+        "title": "Nouveautés dev assisté IA",
+        "description": "Pierre-Yves Banaszak présente les dernières innovations",
+        "duration_minutes": 30,
+        "speaker_ids": ["user-6"]
+      },
+      {
+        "time": "20:00",
+        "title": "REX Vibe Coding non-tech",
+        "description": "Antoine Crespin partage son expérience de non-développeur",
+        "duration_minutes": 20,
+        "speaker_ids": ["user-8"]
+      },
+      {
+        "time": "20:20",
+        "title": "Claude Code sans coder",
+        "description": "Quentin Tousart montre comment utiliser Claude Code efficacement",
+        "duration_minutes": 20,
+        "speaker_ids": ["user-9"]
+      },
+      {
+        "time": "20:40",
+        "title": "RAG sur mesure",
+        "description": "François Xavier Cao détaille la mise en place d'un RAG pour données confidentielles",
+        "duration_minutes": 30,
+        "speaker_ids": ["user-10"]
+      },
+      {
+        "time": "21:10",
+        "title": "Networking et drinks",
+        "description": "Offert par notre sponsor Proppl",
+        "duration_minutes": 50
+      }
+    ],
+    "resources": [
+      {
+        "title": "Slides RAG",
+        "url": "/resources/slides-rag-fxcao.pdf",
+        "type": "slides"
+      },
+      {
+        "title": "Code démo Claude",
+        "url": "https://github.com/gab/demo-claude-code",
+        "type": "code"
+      }
+    ],
+    "gallery_urls": [
+      "/images/events/meetup-3/photo-1.webp",
+      "/images/events/meetup-3/photo-2.webp",
+      "/images/events/meetup-3/photo-3.webp"
+    ],
+    "calendar": {
+      "google_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Lille+AI+Code+Meetup+%233&dates=20240301T190000Z/20240301T220000Z&location=SKEMA+Lille&details=Format+ouvert+Tech+et+non-Tech",
+      "ical_data": "BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\nDTSTART:20240301T190000Z\nDTEND:20240301T220000Z\nSUMMARY:Lille AI Code Meetup #3\nLOCATION:SKEMA Business School, Lille\nDESCRIPTION:Format ouvert Tech et non-Tech avec 4 speakers\nEND:VEVENT\nEND:VCALENDAR"
+    }
   },
   {
     "id": "event-4",
     "slug": "genai-builders-meetup-4",
-    "title": "GenAI Builders meetup #4",
-    "description": "🚨 Le Lille AI Code Meetup fait peau neuve et devient GAB - GenAI Builders.\n\nL'IA Générative transforme la manière dont nous construisons des produits digitaux. Rejoins la communauté tech lilloise pour la quatrième édition de ce meetup pour partager ou découvrir ces nouveaux usages.\n\n## C'est quoi ce meetup ?\n\nOn se retrouve pour échanger, partager des astuces et explorer ensemble comment l'IA transforme radicalement la manière dont nous construisons des produits digitaux. Que tu travailles dans le monde du produit ou simplement curieux, viens découvrir comment l'IA générative peut accélérer ton quotidien.\n\n## Au menu :\n\n* **Le CMS est mort, vive le CMS !**\n**Pierre Burgy**, CEO de Strapi, viendra nous expliquer comment l'IA générative rebat les cartes pour les éditeurs de solution de gestion de contenus et comment lui et ses équipes travaillent sur le CMS du futur\n* **Maîtriser l'OCR à l'ère de l'agentic**\nLouis Choquel, CTO de Pipelex nous présentera les pièges à éviter dans le domaine de l'extraction de données agentic et comment y remédier.\n* **Refactoring de code legacy avec l'IA**\n**Nicolas Rocq**, TENKAN8 - groupe UMITEK abordera la rétro documentation avec l'IA. Un sujet qui parle à tous ceux qui héritent de projets sans doc ou mal documentés.\n\n_Mais aussi..._\n\n* Des démos de produits créés avec de l'IA\n* Les dernières actus et astuces du moment\n* Des échanges informels sur les possibilités et limites\n\n## Tu es concerné si :\n\n* Tu codes et tu veux gagner en productivité\n* Tu as des idées mais pas les compétences techniques\n* Tu es curieux des nouvelles façons de créer du logiciel\n* Tu veux rencontrer d'autres passionnés de tech\n\n## Pourquoi venir ?\n\n* Pour découvrir ce qu'on peut faire avec ces outils\n* Pour apprendre des autres membres de la communauté\n* Pour élargir ton réseau ou retrouver des connaissances dans un cadre convivial\n* Pour passer un bon moment autour d'une passion commune\n\n**Ramène ta bonne humeur, tes questions et tes idées ! On se retrouve pour viber ensemble et repousser les limites !**\n\n_PS: Débutants bienvenus - pas besoin d'être un expert pour participer !_",
-    "event_date": "2024-04-01T19:00:00Z",
-    "event_end_date": null,
-    "location": "EuraTechnologies, 165 Av. de Bretagne, 59000 Lille, France",
-    "image_url": null,
-    "registration_url": "https://luma.com/hpup7z3i",
+    "title": "GenAI Builders Meetup #4",
+    "description": "Le Lille AI Code Meetup fait peau neuve et devient **GAB - GenAI Builders**. L'IA Générative transforme la manière dont nous construisons des produits digitaux.",
+    "short_description": "Nouvelle identité GAB avec Pierre Burgy (Strapi), Louis Choquel (Pipelex) et Nicolas Rocq.",
+    "event_date": "2026-02-15T19:00:00Z",
+    "event_end_date": "2026-02-15T22:00:00Z",
+    "location": "Lille, Hauts-de-France",
+    "address": "EuraTechnologies, 165 Av. de Bretagne, 59000 Lille, France",
+    "coordinates": [50.6331, 3.0200],
+    "image_url": "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&q=80",
+    "registration_url": "https://lu.ma/hpup7z3i",
     "replay_url": null,
     "is_past": false,
     "event_type": "meetup",
     "capacity": 83,
-    "published": true
+    "registered_count": 42,
+    "published": true,
+    "speakers": ["user-1", "user-2", "user-3"],
+    "tags": ["#GenAI", "#Builders", "#CMS", "#OCR", "#Legacy"],
+    "registered_users": ["user-4", "user-6", "user-8", "user-9"],
+    "agenda": [
+      {
+        "time": "19:00",
+        "title": "Accueil EuraTechnologies",
+        "description": "Networking et café",
+        "duration_minutes": 30
+      },
+      {
+        "time": "19:30",
+        "title": "Le CMS est mort, vive le CMS !",
+        "description": "Pierre Burgy explique comment l'IA rebat les cartes pour les CMS",
+        "duration_minutes": 35,
+        "speaker_ids": ["user-1"]
+      },
+      {
+        "time": "20:05",
+        "title": "Maîtriser l'OCR agentic",
+        "description": "Louis Choquel présente les pièges à éviter en extraction de données",
+        "duration_minutes": 30,
+        "speaker_ids": ["user-2"]
+      },
+      {
+        "time": "20:35",
+        "title": "Refactoring legacy avec l'IA",
+        "description": "Nicolas Rocq aborde la rétro-documentation assistée",
+        "duration_minutes": 30,
+        "speaker_ids": ["user-3"]
+      },
+      {
+        "time": "21:05",
+        "title": "Démos et actus",
+        "description": "Les dernières nouveautés GenAI",
+        "duration_minutes": 20
+      },
+      {
+        "time": "21:25",
+        "title": "Networking et drinks",
+        "description": "Échanges libres",
+        "duration_minutes": 35
+      }
+    ],
+    "resources": [],
+    "gallery_urls": [],
+    "calendar": {
+      "google_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=GenAI+Builders+Meetup+%234&dates=20260215T190000Z/20260215T220000Z&location=EuraTechnologies+Lille&details=Nouvelle+identit%C3%A9+GAB+avec+Pierre+Burgy+Strapi",
+      "ical_data": "BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\nDTSTART:20260215T190000Z\nDTEND:20260215T220000Z\nSUMMARY:GenAI Builders Meetup #4\nLOCATION:EuraTechnologies, Lille\nDESCRIPTION:Nouvelle identité GAB avec Pierre Burgy (Strapi), Louis Choquel (Pipelex) et Nicolas Rocq\nEND:VEVENT\nEND:VCALENDAR"
+    }
+  },
+  {
+    "id": "event-5",
+    "slug": "workshop-claude-code-paris",
+    "title": "Workshop Claude Code",
+    "description": "Atelier pratique de 3h pour maîtriser Claude Code. Apprends à créer des applications complètes en pair-programming avec l'IA.",
+    "short_description": "Atelier pratique de 3h pour maîtriser Claude Code.",
+    "event_date": "2026-03-10T14:00:00Z",
+    "event_end_date": "2026-03-10T17:00:00Z",
+    "location": "Paris, Île-de-France",
+    "address": "Station F, 5 Parvis Alan Turing, 75013 Paris, France",
+    "coordinates": [48.8348, 2.3726],
+    "image_url": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80",
+    "registration_url": "https://lu.ma/workshop-claude-paris",
+    "replay_url": null,
+    "is_past": false,
+    "event_type": "workshop",
+    "capacity": 25,
+    "registered_count": 18,
+    "published": true,
+    "speakers": ["user-9"],
+    "tags": ["#Claude Code", "#Workshop", "#IA", "#Pratique", "#Paris"],
+    "registered_users": ["user-1", "user-4", "user-6"],
+    "agenda": [
+      {
+        "time": "14:00",
+        "title": "Introduction et setup",
+        "description": "Installation de l'environnement et concepts de base",
+        "duration_minutes": 30
+      },
+      {
+        "time": "14:30",
+        "title": "Premier projet guidé",
+        "description": "Création d'une app de A à Z avec Claude Code",
+        "duration_minutes": 60,
+        "speaker_ids": ["user-9"]
+      },
+      {
+        "time": "15:30",
+        "title": "Pause",
+        "description": "Café et échanges",
+        "duration_minutes": 15
+      },
+      {
+        "time": "15:45",
+        "title": "Projet libre",
+        "description": "Chacun travaille sur son propre projet avec accompagnement",
+        "duration_minutes": 60
+      },
+      {
+        "time": "16:45",
+        "title": "Démos et Q&A",
+        "description": "Présentation des projets et questions",
+        "duration_minutes": 15
+      }
+    ],
+    "resources": [],
+    "gallery_urls": [],
+    "calendar": {
+      "google_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Workshop+Claude+Code&dates=20260310T140000Z/20260310T170000Z&location=Station+F+Paris&details=Atelier+pratique+de+3h+pour+ma%C3%AEtriser+Claude+Code",
+      "ical_data": "BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\nDTSTART:20260310T140000Z\nDTEND:20260310T170000Z\nSUMMARY:Workshop Claude Code\nLOCATION:Station F, Paris\nDESCRIPTION:Atelier pratique de 3h pour maîtriser Claude Code\nEND:VEVENT\nEND:VCALENDAR"
+    }
+  },
+  {
+    "id": "event-6",
+    "slug": "webinar-genai-remote",
+    "title": "Webinar : GenAI pour les devs",
+    "description": "Webinar en ligne de 1h30 pour découvrir comment intégrer l'IA générative dans ton workflow de développement quotidien.",
+    "short_description": "Webinar en ligne : IA générative dans le workflow dev.",
+    "event_date": "2026-03-20T12:00:00Z",
+    "event_end_date": "2026-03-20T13:30:00Z",
+    "location": "Remote",
+    "address": null,
+    "coordinates": [46.603354, 1.888334],
+    "image_url": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=800&q=80",
+    "registration_url": "https://lu.ma/webinar-genai-devs",
+    "replay_url": null,
+    "is_past": false,
+    "event_type": "webinar",
+    "capacity": null,
+    "registered_count": 156,
+    "published": true,
+    "speakers": ["user-6", "user-9"],
+    "tags": ["#Webinar", "#GenAI", "#Dev", "#Remote", "#Workflow"],
+    "registered_users": ["user-1", "user-2", "user-3", "user-4"],
+    "agenda": [
+      {
+        "time": "12:00",
+        "title": "Introduction",
+        "description": "Présentation du programme",
+        "duration_minutes": 10
+      },
+      {
+        "time": "12:10",
+        "title": "Les outils du dev augmenté",
+        "description": "Tour d'horizon des solutions disponibles",
+        "duration_minutes": 30,
+        "speaker_ids": ["user-6"]
+      },
+      {
+        "time": "12:40",
+        "title": "Démo live",
+        "description": "Création d'une feature de A à Z",
+        "duration_minutes": 30,
+        "speaker_ids": ["user-9"]
+      },
+      {
+        "time": "13:10",
+        "title": "Q&A",
+        "description": "Questions du public",
+        "duration_minutes": 20
+      }
+    ],
+    "resources": [],
+    "gallery_urls": [],
+    "calendar": {
+      "google_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Webinar+GenAI+pour+les+devs&dates=20260320T120000Z/20260320T133000Z&location=En+ligne&details=Webinar+en+ligne+IA+g%C3%A9n%C3%A9rative+pour+les+devs",
+      "ical_data": "BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\nDTSTART:20260320T120000Z\nDTEND:20260320T133000Z\nSUMMARY:Webinar : GenAI pour les devs\nLOCATION:En ligne\nDESCRIPTION:Webinar en ligne : IA générative dans le workflow dev\nEND:VEVENT\nEND:VCALENDAR"
+    }
+  },
+  {
+    "id": "event-7",
+    "slug": "gab-lyon-meetup-1",
+    "title": "GAB Lyon - Premier Meetup",
+    "description": "La communauté GAB s'étend à Lyon ! Rejoins-nous pour le premier meetup lyonnais dédié aux builders augmentés.",
+    "short_description": "Premier meetup GAB à Lyon.",
+    "event_date": "2026-04-05T19:00:00Z",
+    "event_end_date": "2026-04-05T22:00:00Z",
+    "location": "Lyon, Auvergne-Rhône-Alpes",
+    "address": "H7, 70 Quai Perrache, 69002 Lyon, France",
+    "coordinates": [45.7485, 4.8180],
+    "image_url": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80",
+    "registration_url": "https://lu.ma/gab-lyon-1",
+    "replay_url": null,
+    "is_past": false,
+    "event_type": "meetup",
+    "capacity": 50,
+    "registered_count": 23,
+    "published": true,
+    "speakers": [],
+    "tags": ["#GAB", "#Lyon", "#Meetup", "#Community", "#Local"],
+    "registered_users": ["user-2", "user-7", "user-10"],
+    "agenda": [
+      {
+        "time": "19:00",
+        "title": "Accueil H7",
+        "description": "Networking et découverte du lieu",
+        "duration_minutes": 30
+      },
+      {
+        "time": "19:30",
+        "title": "Présentation GAB",
+        "description": "Découverte de la communauté et de sa mission",
+        "duration_minutes": 20
+      },
+      {
+        "time": "19:50",
+        "title": "Lightning talks",
+        "description": "Présentations courtes de la communauté lyonnaise",
+        "duration_minutes": 40
+      },
+      {
+        "time": "20:30",
+        "title": "Démos",
+        "description": "Projets créés avec l'IA générative",
+        "duration_minutes": 30
+      },
+      {
+        "time": "21:00",
+        "title": "Networking",
+        "description": "Échanges libres et drinks",
+        "duration_minutes": 60
+      }
+    ],
+    "resources": [],
+    "gallery_urls": [],
+    "calendar": {
+      "google_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=GAB+Lyon+Premier+Meetup&dates=20260405T190000Z/20260405T220000Z&location=H7+Lyon&details=Premier+meetup+GAB+%C3%A0+Lyon",
+      "ical_data": "BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\nDTSTART:20260405T190000Z\nDTEND:20260405T220000Z\nSUMMARY:GAB Lyon - Premier Meetup\nLOCATION:H7, Lyon\nDESCRIPTION:Premier meetup GAB à Lyon\nEND:VEVENT\nEND:VCALENDAR"
+    }
   }
 ]

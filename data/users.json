@@ -1,0 +1,102 @@
+[
+  {
+    "id": "user-1",
+    "name": "Pierre Burgy",
+    "role": "CEO",
+    "company": "Strapi",
+    "bio": "Fondateur et CEO de Strapi, le CMS headless open-source leader. Passionné par l'open-source et l'avenir du content management.",
+    "avatar_url": "/images/speakers/pierre-burgy.webp",
+    "linkedin_url": "https://linkedin.com/in/pierreburgy",
+    "twitter_url": "https://twitter.com/pierreburgy"
+  },
+  {
+    "id": "user-2",
+    "name": "Louis Choquel",
+    "role": "CTO",
+    "company": "Pipelex",
+    "bio": "CTO de Pipelex, expert en extraction de données et OCR. Spécialiste des architectures agentic et du traitement documentaire.",
+    "avatar_url": "/images/speakers/louis-choquel.webp",
+    "linkedin_url": "https://linkedin.com/in/louischoquel",
+    "twitter_url": null
+  },
+  {
+    "id": "user-3",
+    "name": "Nicolas Rocq",
+    "role": "Consultant",
+    "company": "TENKAN8 - Groupe UMITEK",
+    "bio": "Expert en modernisation de code legacy et rétro-documentation assistée par IA. Accompagne les entreprises dans leur transformation digitale.",
+    "avatar_url": "/images/speakers/nicolas-rocq.webp",
+    "linkedin_url": "https://linkedin.com/in/nicolasrocq",
+    "twitter_url": null
+  },
+  {
+    "id": "user-4",
+    "name": "Stéphane Dessein",
+    "role": "CTO",
+    "company": "Le Fourgon",
+    "bio": "CTO du Fourgon, pionnier de la consigne en France. Partage son expérience sur la refonte de leur plateforme e-commerce avec l'IA.",
+    "avatar_url": "/images/speakers/stephane-dessein.webp",
+    "linkedin_url": "https://linkedin.com/in/stephanedessein",
+    "twitter_url": null
+  },
+  {
+    "id": "user-5",
+    "name": "Julien Robidet",
+    "role": "Développeur Web",
+    "company": "Le Fourgon",
+    "bio": "Développeur web chez Le Fourgon, spécialisé dans les architectures e-commerce modernes et l'intégration d'outils IA dans le workflow de développement.",
+    "avatar_url": "/images/speakers/julien-robidet.webp",
+    "linkedin_url": "https://linkedin.com/in/julienrobidet",
+    "twitter_url": null
+  },
+  {
+    "id": "user-6",
+    "name": "Pierre-Yves Banaszak",
+    "role": "Developer",
+    "company": "Collectif Hoko",
+    "bio": "Développeur au sein du collectif Hoko, passionné par les nouvelles approches de développement assisté par IA et le partage de connaissances.",
+    "avatar_url": "/images/speakers/pierre-yves-banaszak.webp",
+    "linkedin_url": "https://linkedin.com/in/pierreybanaszak",
+    "twitter_url": null
+  },
+  {
+    "id": "user-7",
+    "name": "Julien Robidet",
+    "role": "Developer",
+    "company": "Collectif Hoko",
+    "bio": "Membre du collectif Hoko, explore les frontières du développement moderne et partage ses retours d'expérience terrain.",
+    "avatar_url": "/images/speakers/julien-robidet-hoko.webp",
+    "linkedin_url": "https://linkedin.com/in/julienrobidethoko",
+    "twitter_url": null
+  },
+  {
+    "id": "user-8",
+    "name": "Antoine Crespin",
+    "role": "Entrepreneur",
+    "company": "Indépendant",
+    "bio": "Entrepreneur non-tech qui a découvert le Vibe Coding. Partage sa vision unique sur comment créer des produits sans background technique.",
+    "avatar_url": "/images/speakers/antoine-crespin.webp",
+    "linkedin_url": "https://linkedin.com/in/antoinecrespin",
+    "twitter_url": null
+  },
+  {
+    "id": "user-9",
+    "name": "Quentin Tousart",
+    "role": "Product Builder",
+    "company": "GAB",
+    "bio": "Passionné par Claude Code et la création de produits sans expérience préalable en développement. Evangéliste de l'approche no-code augmenté.",
+    "avatar_url": "/images/speakers/quentin-tousart.webp",
+    "linkedin_url": "https://linkedin.com/in/quentintousart",
+    "twitter_url": null
+  },
+  {
+    "id": "user-10",
+    "name": "François Xavier Cao",
+    "role": "Data Engineer",
+    "company": "Indépendant",
+    "bio": "Expert en RAG et traitement de données confidentielles. Spécialiste des architectures IA respectueuses de la vie privée.",
+    "avatar_url": "/images/speakers/fx-cao.webp",
+    "linkedin_url": "https://linkedin.com/in/fxcao",
+    "twitter_url": null
+  }
+]

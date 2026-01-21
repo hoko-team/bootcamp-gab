@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { NewsletterForm } from "@/components/forms/newsletter-form";
 import { Hero } from "@/components/hero/hero";
+import { EventsMapWrapper } from "@/components/events/events-map-wrapper";
+import type { MapEvent } from "@/components/events/events-map";
 
 const features = [
   {
@@ -28,6 +30,48 @@ const features = [
   },
 ];
 
+const upcomingEvents: MapEvent[] = [
+  {
+    id: "1",
+    title: "GAB Meetup #4",
+    date: "29 janvier 2026 - 19h00",
+    location: "Lille, Hauts-de-France",
+    coordinates: [50.62925, 3.057256],
+    eventType: "Meetup",
+    registrationUrl: "/events",
+    capacity: 50,
+  },
+  {
+    id: "2",
+    title: "Workshop Claude Code",
+    date: "15 février 2026 - 14h00",
+    location: "Paris, Île-de-France",
+    coordinates: [48.8566, 2.3522],
+    eventType: "Workshop",
+    registrationUrl: "/events",
+    capacity: 30,
+  },
+  {
+    id: "3",
+    title: "GAB Lyon - Premier Meetup",
+    date: "22 février 2026 - 19h00",
+    location: "Lyon, Auvergne-Rhône-Alpes",
+    coordinates: [45.764043, 4.835659],
+    eventType: "Meetup",
+    registrationUrl: "/events",
+    capacity: 40,
+  },
+  {
+    id: "4",
+    title: "Webinar GenAI pour les devs",
+    date: "1 mars 2026 - 12h00",
+    location: "En ligne",
+    coordinates: [46.603354, 1.888334],
+    eventType: "Webinar",
+    registrationUrl: "/events",
+  },
+];
+
 export default function HomePage() {
   return (
     <div className="flex flex-col">
@@ -36,6 +80,7 @@ export default function HomePage() {
         nextEvent={{
           title: "GAB Meetup #4",
           date: "29/01/2026",
+          location: "Lille, Hauts-de-France",
           registrationUrl: "/events",
         }}
       />
@@ -59,10 +104,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Events Preview */}
+      {/* Events Map Section */}
       <section className="container mx-auto px-4 py-16">
         <div className="flex items-center justify-between mb-8">
-          <h2 className="font-heading text-2xl font-bold">Prochains Events</h2>
+          <div>
+            <h2 className="font-heading text-2xl font-bold">Prochains Events</h2>
+            <p className="text-muted-foreground mt-1">
+              Cliquez sur un marqueur pour voir les details
+            </p>
+          </div>
           <Button asChild variant="ghost">
             <Link href="/events">
               Voir tous les events
@@ -70,13 +120,7 @@ export default function HomePage() {
             </Link>
           </Button>
         </div>
-        <div className="rounded-lg border border-border/50 p-8 text-center">
-          <Calendar className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-          <p className="text-muted-foreground">Events a venir bientot...</p>
-          <Button asChild className="mt-4">
-            <Link href="/events">Voir le calendrier</Link>
-          </Button>
-        </div>
+        <EventsMapWrapper events={upcomingEvents} />
       </section>
 
       {/* Resources Preview */}

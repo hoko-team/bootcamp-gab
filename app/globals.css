@@ -95,3 +95,9 @@
 .animate-stripe {
   animation: stripe 8s ease-in-out infinite;
 }
+
+/* Custom Leaflet marker */
+.custom-marker {
+  background: transparent;
+  border: none;
+}

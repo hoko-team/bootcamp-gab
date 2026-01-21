@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Calendar } from "lucide-react";
+import { ArrowRight, Calendar, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { AnimatedStripes } from "./animated-stripes";
@@ -9,6 +9,7 @@ interface HeroProps {
   nextEvent?: {
     title: string;
     date: string;
+    location?: string;
     registrationUrl: string;
   };
 }
@@ -80,6 +81,12 @@ export function Hero({ nextEvent }: HeroProps) {
                     <Calendar className="h-4 w-4" />
                     <span>{nextEvent.date}</span>
                   </div>
+                  {nextEvent.location && (
+                    <div className="flex items-center gap-2 text-sm text-white/70 mb-2">
+                      <MapPin className="h-4 w-4" />
+                      <span>{nextEvent.location}</span>
+                    </div>
+                  )}
                   <h3 className="font-heading text-lg font-semibold mb-3 text-white">
                     {nextEvent.title}
                   </h3>
