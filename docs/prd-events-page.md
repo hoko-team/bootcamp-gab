@@ -39,7 +39,7 @@ Créer une page events permettant de :
 - Badge "Replay disponible" (si applicable)
 - Bouton action : "S'inscrire" ou "Voir le replay"
 
-### 2.2 Système de filtres
+### 2.2 Système de filtres dynamiques
 
 #### Filtres disponibles
 
